@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 120" width="900" height="120">
+  <defs>
+    <linearGradient id="footerBg" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0c2461"/>
+      <stop offset="50%" stop-color="#071e3d"/>
+      <stop offset="100%" stop-color="#0d1117"/>
+    </linearGradient>
+    <linearGradient id="footerWave" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#0ea5e9" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#0ea5e9" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="120" fill="url(#footerBg)"/>
+
+  <!-- Tiny stars -->
+  <circle cx="80"  cy="90" r="1"   fill="#bae6fd"><animate attributeName="opacity" values="0.5;0.1;0.5" dur="2.7s" repeatCount="indefinite"/></circle>
+  <circle cx="220" cy="75" r="1.5" fill="#38bdf8"><animate attributeName="opacity" values="0.3;0.8;0.3" dur="3.4s" repeatCount="indefinite"/></circle>
+  <circle cx="460" cy="95" r="1"   fill="#7dd3fc"><animate attributeName="opacity" values="0.6;0.2;0.6" dur="2.2s" repeatCount="indefinite"/></circle>
+  <circle cx="610" cy="80" r="1.5" fill="#bae6fd"><animate attributeName="opacity" values="0.4;0.9;0.4" dur="4.0s" repeatCount="indefinite"/></circle>
+  <circle cx="820" cy="88" r="1"   fill="#38bdf8"><animate attributeName="opacity" values="0.7;0.2;0.7" dur="3.1s" repeatCount="indefinite"/></circle>
+
+  <!-- Footer text -->
+  <text x="450" y="72" text-anchor="middle"
+        font-family="'Segoe UI', Arial, sans-serif"
+        font-size="13" fill="#7dd3fc" letter-spacing="1" opacity="0.75">
+    Thanks for visiting! Let's connect and build something awesome together.
+  </text>
+
+  <!-- Wave front layer (top of footer) -->
+  <path fill="url(#footerWave)" opacity="0.45">
+    <animate attributeName="d"
+      values="M0,35 C225,58 450,22 675,45 C787,57 843,37 900,42 L900,0 L0,0 Z;
+              M0,44 C200,22 420,54 640,35 C760,26 840,46 900,39 L900,0 L0,0 Z;
+              M0,35 C225,58 450,22 675,45 C787,57 843,37 900,42 L900,0 L0,0 Z"
+      dur="6s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- Wave back layer -->
+  <path fill="#0ea5e9" opacity="0.20">
+    <animate attributeName="d"
+      values="M0,22 C150,32 300,12 450,22 C600,32 750,14 900,21 L900,0 L0,0 Z;
+              M0,27 C170,12 340,32 510,20 C660,10 780,30 900,24 L900,0 L0,0 Z;
+              M0,22 C150,32 300,12 450,22 C600,32 750,14 900,21 L900,0 L0,0 Z"
+      dur="4s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- Wave shimmer edge -->
+  <path fill="none" stroke="#7dd3fc" stroke-width="1.2" stroke-opacity="0.3">
+    <animate attributeName="d"
+      values="M0,35 C225,58 450,22 675,45 C787,57 843,37 900,42;
+              M0,44 C200,22 420,54 640,35 C760,26 840,46 900,39;
+              M0,35 C225,58 450,22 675,45 C787,57 843,37 900,42"
+      dur="6s" repeatCount="indefinite"/>
+  </path>
+</svg>
+

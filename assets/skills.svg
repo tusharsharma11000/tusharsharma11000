@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 110" width="760" height="110">
+  <defs>
+    <linearGradient id="cardBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#161b22"/>
+    </linearGradient>
+    <!-- Glow filters per badge -->
+    <filter id="glowPy"  x="-25%" y="-25%" width="150%" height="150%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="glowCpp" x="-25%" y="-25%" width="150%" height="150%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="glowSql" x="-25%" y="-25%" width="150%" height="150%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="glowMdb" x="-25%" y="-25%" width="150%" height="150%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="glowGit" x="-25%" y="-25%" width="150%" height="150%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="glowHub" x="-25%" y="-25%" width="150%" height="150%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+
+  <!-- Card background -->
+  <rect width="760" height="110" fill="url(#cardBg)" rx="12"/>
+
+  <!-- Section heading -->
+  <text x="380" y="26" text-anchor="middle"
+        font-family="'Segoe UI', Arial, sans-serif"
+        font-size="12" font-weight="600" fill="#38bdf8" letter-spacing="3">
+    TECH  STACK
+  </text>
+  <line x1="160" y1="33" x2="600" y2="33" stroke="#38bdf8" stroke-width="0.5" stroke-opacity="0.25"/>
+
+  <!-- ── PYTHON ── x=15 -->
+  <g opacity="0" filter="url(#glowPy)">
+    <animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.1s" fill="freeze"/>
+    <rect x="15" y="44" width="108" height="46" fill="#0f2a4a" rx="9">
+      <animate attributeName="fill" values="#0f2a4a;#1a4a8a;#0f2a4a" dur="3.8s" begin="0.0s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="15" y="44" width="108" height="46" fill="none" stroke="#3776ab" stroke-width="1.2" rx="9" opacity="0.5">
+      <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3.8s" repeatCount="indefinite"/>
+    </rect>
+    <text x="69" y="72" text-anchor="middle"
+          font-family="'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#3776ab">
+      🐍 Python
+    </text>
+  </g>
+
+  <!-- ── C++ ── x=138 -->
+  <g opacity="0" filter="url(#glowCpp)">
+    <animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.2s" fill="freeze"/>
+    <rect x="138" y="44" width="108" height="46" fill="#0d1f3a" rx="9">
+      <animate attributeName="fill" values="#0d1f3a;#0d3a6a;#0d1f3a" dur="4.2s" begin="0.5s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="138" y="44" width="108" height="46" fill="none" stroke="#00599C" stroke-width="1.2" rx="9" opacity="0.5">
+      <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="4.2s" begin="0.5s" repeatCount="indefinite"/>
+    </rect>
+    <text x="192" y="72" text-anchor="middle"
+          font-family="'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#00599C">
+      ⚡ C++
+    </text>
+  </g>
+
+  <!-- ── SQL ── x=261 -->
+  <g opacity="0" filter="url(#glowSql)">
+    <animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.3s" fill="freeze"/>
+    <rect x="261" y="44" width="108" height="46" fill="#0d2030" rx="9">
+      <animate attributeName="fill" values="#0d2030;#0d3550;#0d2030" dur="3.5s" begin="0.2s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="261" y="44" width="108" height="46" fill="none" stroke="#4479A1" stroke-width="1.2" rx="9" opacity="0.5">
+      <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3.5s" begin="0.2s" repeatCount="indefinite"/>
+    </rect>
+    <text x="315" y="72" text-anchor="middle"
+          font-family="'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#4479A1">
+      🗄️ SQL
+    </text>
+  </g>
+
+  <!-- ── MONGODB ── x=384 -->
+  <g opacity="0" filter="url(#glowMdb)">
+    <animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.4s" fill="freeze"/>
+    <rect x="384" y="44" width="108" height="46" fill="#0a2318" rx="9">
+      <animate attributeName="fill" values="#0a2318;#0a4028;#0a2318" dur="4.5s" begin="0.7s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="384" y="44" width="108" height="46" fill="none" stroke="#47A248" stroke-width="1.2" rx="9" opacity="0.5">
+      <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="4.5s" begin="0.7s" repeatCount="indefinite"/>
+    </rect>
+    <text x="438" y="72" text-anchor="middle"
+          font-family="'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#47A248">
+      🍃 MongoDB
+    </text>
+  </g>
+
+  <!-- ── GIT ── x=507 -->
+  <g opacity="0" filter="url(#glowGit)">
+    <animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.5s" fill="freeze"/>
+    <rect x="507" y="44" width="108" height="46" fill="#2d1208" rx="9">
+      <animate attributeName="fill" values="#2d1208;#551e0d;#2d1208" dur="3.9s" begin="0.3s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="507" y="44" width="108" height="46" fill="none" stroke="#F05032" stroke-width="1.2" rx="9" opacity="0.5">
+      <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3.9s" begin="0.3s" repeatCount="indefinite"/>
+    </rect>
+    <text x="561" y="72" text-anchor="middle"
+          font-family="'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#F05032">
+      🌿 Git
+    </text>
+  </g>
+
+  <!-- ── GITHUB ── x=630 -->
+  <g opacity="0" filter="url(#glowHub)">
+    <animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.6s" fill="freeze"/>
+    <rect x="630" y="44" width="115" height="46" fill="#1a1a2e" rx="9">
+      <animate attributeName="fill" values="#1a1a2e;#2d2d4e;#1a1a2e" dur="5.0s" begin="0.6s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="630" y="44" width="115" height="46" fill="none" stroke="#8b949e" stroke-width="1.2" rx="9" opacity="0.5">
+      <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="5.0s" begin="0.6s" repeatCount="indefinite"/>
+    </rect>
+    <text x="687" y="72" text-anchor="middle"
+          font-family="'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#8b949e">
+      🐙 GitHub
+    </text>
+  </g>
+</svg>
+

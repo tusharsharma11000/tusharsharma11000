@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 355 195" width="355" height="195">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#1a0533"/>
+    </linearGradient>
+    <linearGradient id="border2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <linearGradient id="topBar2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#a855f7"/>
+      <stop offset="50%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <filter id="glow2" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <radialGradient id="pulse" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="355" height="195" fill="url(#bg2)" rx="14"/>
+
+  <!-- Animated border glow -->
+  <rect x="1" y="1" width="353" height="193" fill="none"
+        stroke="url(#border2)" stroke-width="1.5" rx="13">
+    <animate attributeName="opacity" values="0.35;0.95;0.35" dur="3.2s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="355" height="4" fill="url(#topBar2)" rx="2">
+    <animate attributeName="opacity" values="0.7;1;0.7" dur="2.8s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Corner glow blob (purple) -->
+  <circle cx="325" cy="165" r="42" fill="url(#pulse)">
+    <animate attributeName="r" values="36;52;36" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.8;1;0.8" dur="4s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Scanning line animation (AI effect) -->
+  <rect x="14" y="0" width="327" height="1.5" fill="#a855f7" opacity="0" rx="1">
+    <animate attributeName="y" values="14;181;14" dur="3.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0.3;0.3;0" keyTimes="0;0.05;0.95;1" dur="3.5s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Shield icon area -->
+  <text x="28" y="62" font-family="'Segoe UI Emoji', sans-serif"
+        font-size="28" fill="#a855f7" filter="url(#glow2)"
+        opacity="0">
+    &#x1F6E1;
+    <animate attributeName="opacity" values="0;1" dur="0.6s" begin="0.2s" fill="freeze"/>
+  </text>
+
+  <!-- AI pulse ring around icon -->
+  <circle cx="44" cy="45" r="22" fill="none" stroke="#a855f7" stroke-width="1" opacity="0">
+    <animate attributeName="r" values="20;28;20" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.5;0;0.5" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0.4" dur="0.3s" begin="0.5s" fill="freeze"/>
+  </circle>
+
+  <!-- SENTINEL AI label pill -->
+  <rect x="115" y="33" width="98" height="20" fill="#2d1045" rx="10" opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="0.3s" fill="freeze"/>
+  </rect>
+  <text x="164" y="47" text-anchor="middle"
+        font-family="'Segoe UI', sans-serif" font-size="9.5" fill="#a855f7"
+        font-weight="700" letter-spacing="1" opacity="0">
+    SENTINEL AI
+    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="0.3s" fill="freeze"/>
+  </text>
+
+  <!-- Project title -->
+  <text x="28" y="95" font-family="'Segoe UI', Arial, sans-serif"
+        font-size="22" font-weight="700" fill="white" opacity="0">
+    Sentinel AI
+    <animate attributeName="opacity" values="0;1" dur="0.6s" begin="0.4s" fill="freeze"/>
+  </text>
+
+  <!-- Description -->
+  <text x="28" y="118" font-family="'Segoe UI', Arial, sans-serif"
+        font-size="11.5" fill="#8b949e" opacity="0">
+    AI-powered security &amp; monitoring
+    <animate attributeName="opacity" values="0;1" dur="0.6s" begin="0.5s" fill="freeze"/>
+  </text>
+  <text x="28" y="134" font-family="'Segoe UI', Arial, sans-serif"
+        font-size="11.5" fill="#8b949e" opacity="0">
+    platform with real-time intelligence.
+    <animate attributeName="opacity" values="0;1" dur="0.6s" begin="0.6s" fill="freeze"/>
+  </text>
+
+  <!-- Divider -->
+  <line x1="28" y1="147" x2="327" y2="147" stroke="#a855f7" stroke-width="0.5" stroke-opacity="0.25" opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="0.6s" fill="freeze"/>
+  </line>
+
+  <!-- Tech badges -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="0.7s" fill="freeze"/>
+    <rect x="28" y="157" width="50" height="22" fill="#1e0a3c" rx="6"/>
+    <rect x="28" y="157" width="50" height="22" fill="none" stroke="#a855f7" stroke-width="0.8" rx="6" opacity="0.5"/>
+    <text x="53" y="172" text-anchor="middle" font-family="'Segoe UI', sans-serif"
+          font-size="10" fill="#c084fc" font-weight="600">Python</text>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="0.8s" fill="freeze"/>
+    <rect x="84" y="157" width="55" height="22" fill="#0a2318" rx="6"/>
+    <rect x="84" y="157" width="55" height="22" fill="none" stroke="#22c55e" stroke-width="0.8" rx="6" opacity="0.5"/>
+    <text x="111" y="172" text-anchor="middle" font-family="'Segoe UI', sans-serif"
+          font-size="10" fill="#4ade80" font-weight="600">MongoDB</text>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="0.9s" fill="freeze"/>
+    <rect x="145" y="157" width="38" height="22" fill="#1e0a3c" rx="6"/>
+    <rect x="145" y="157" width="38" height="22" fill="none" stroke="#6366f1" stroke-width="0.8" rx="6" opacity="0.5"/>
+    <text x="164" y="172" text-anchor="middle" font-family="'Segoe UI', sans-serif"
+          font-size="10" fill="#818cf8" font-weight="600">AI</text>
+  </g>
+
+  <!-- Arrow -->
+  <text x="325" y="182" text-anchor="end" font-family="'Segoe UI', sans-serif"
+        font-size="16" fill="#a855f7" opacity="0">
+    View →
+    <animate attributeName="opacity" values="0;0.7" dur="0.5s" begin="1s" fill="freeze"/>
+  </text>
+</svg>
+
