@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 130" width="760" height="130">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1b27"/>
+      <stop offset="100%" stop-color="#24283b"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFD700"/>
+      <stop offset="100%" stop-color="#FFA500"/>
+    </linearGradient>
+    <linearGradient id="silverGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#C0C0C0"/>
+      <stop offset="100%" stop-color="#9a9a9a"/>
+    </linearGradient>
+    <linearGradient id="bronzeGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#CD7F32"/>
+      <stop offset="100%" stop-color="#a0622a"/>
+    </linearGradient>
+    <filter id="goldGlow">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Card -->
+  <rect width="760" height="130" fill="url(#bg)" rx="6" stroke="#414868" stroke-width="1"/>
+
+  <!-- Gold top accent bar -->
+  <rect x="0" y="0" width="760" height="3" fill="url(#goldGrad)" rx="2">
+    <animate attributeName="opacity" values="0.7;1;0.7" dur="2.5s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Title -->
+  <text x="380" y="22" text-anchor="middle"
+        font-family="'Segoe UI', Arial, sans-serif"
+        font-size="12" fill="#a9b1d6" letter-spacing="2">GITHUB  TROPHIES</text>
+
+  <!-- ══ TROPHY 1: Commits++ (GOLD) ══ x=20 -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.1s" fill="freeze"/>
+    <rect x="20" y="32" width="105" height="88" fill="#1f1d0a" rx="8" stroke="#FFD700" stroke-width="0.8" stroke-opacity="0.6"/>
+    <!-- Trophy cup -->
+    <path d="M55,48 L75,48 L72,62 Q63,68 53,62 Z" fill="url(#goldGrad)" filter="url(#goldGlow)"/>
+    <rect x="60" y="62" width="5" height="10" fill="url(#goldGrad)"/>
+    <rect x="54" y="72" width="17" height="4" rx="1" fill="url(#goldGrad)"/>
+    <!-- Handles -->
+    <path d="M55,52 Q48,52 48,57 Q48,62 55,62" fill="none" stroke="url(#goldGrad)" stroke-width="2"/>
+    <path d="M75,52 Q82,52 82,57 Q82,62 75,62" fill="none" stroke="url(#goldGrad)" stroke-width="2"/>
+    <!-- Sparkle -->
+    <circle cx="80" cy="44" r="2" fill="#FFD700">
+      <animate attributeName="opacity" values="0;1;0" dur="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="1;2.5;1" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="50" cy="42" r="1.5" fill="#FFD700">
+      <animate attributeName="opacity" values="0;1;0" dur="1.8s" begin="0.3s" repeatCount="indefinite"/>
+    </circle>
+    <!-- Labels -->
+    <text x="72" y="92" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="9" fill="#FFD700" font-weight="700">GOLD</text>
+    <text x="72" y="108" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="8.5" fill="#a9b1d6">Commits++</text>
+  </g>
+
+  <!-- ══ TROPHY 2: Stars (GOLD) ══ x=137 -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.2s" fill="freeze"/>
+    <rect x="137" y="32" width="105" height="88" fill="#1f1d0a" rx="8" stroke="#FFD700" stroke-width="0.8" stroke-opacity="0.6"/>
+    <path d="M172,48 L192,48 L189,62 Q180,68 170,62 Z" fill="url(#goldGrad)" filter="url(#goldGlow)"/>
+    <rect x="177" y="62" width="5" height="10" fill="url(#goldGrad)"/>
+    <rect x="171" y="72" width="17" height="4" rx="1" fill="url(#goldGrad)"/>
+    <path d="M172,52 Q165,52 165,57 Q165,62 172,62" fill="none" stroke="url(#goldGrad)" stroke-width="2"/>
+    <path d="M192,52 Q199,52 199,57 Q199,62 192,62" fill="none" stroke="url(#goldGrad)" stroke-width="2"/>
+    <circle cx="197" cy="44" r="2" fill="#FFD700">
+      <animate attributeName="opacity" values="0;1;0" dur="2s" begin="0.4s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="1;2.5;1" dur="2s" begin="0.4s" repeatCount="indefinite"/>
+    </circle>
+    <text x="189" y="92" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="9" fill="#FFD700" font-weight="700">GOLD</text>
+    <text x="189" y="108" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="8.5" fill="#a9b1d6">Stars</text>
+  </g>
+
+  <!-- ══ TROPHY 3: MultiLang (SILVER) ══ x=254 -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.3s" fill="freeze"/>
+    <rect x="254" y="32" width="105" height="88" fill="#151515" rx="8" stroke="#C0C0C0" stroke-width="0.8" stroke-opacity="0.5"/>
+    <path d="M289,48 L309,48 L306,62 Q297,68 287,62 Z" fill="url(#silverGrad)"/>
+    <rect x="294" y="62" width="5" height="10" fill="url(#silverGrad)"/>
+    <rect x="288" y="72" width="17" height="4" rx="1" fill="url(#silverGrad)"/>
+    <path d="M289,52 Q282,52 282,57 Q282,62 289,62" fill="none" stroke="url(#silverGrad)" stroke-width="2"/>
+    <path d="M309,52 Q316,52 316,57 Q316,62 309,62" fill="none" stroke="url(#silverGrad)" stroke-width="2"/>
+    <circle cx="314" cy="44" r="1.5" fill="#C0C0C0">
+      <animate attributeName="opacity" values="0;0.8;0" dur="2.2s" begin="0.2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="306" y="92" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="9" fill="#C0C0C0" font-weight="700">SILVER</text>
+    <text x="306" y="108" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="8.5" fill="#a9b1d6">MultiLanguage</text>
+  </g>
+
+  <!-- ══ TROPHY 4: PRs (SILVER) ══ x=371 -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.4s" fill="freeze"/>
+    <rect x="371" y="32" width="105" height="88" fill="#151515" rx="8" stroke="#C0C0C0" stroke-width="0.8" stroke-opacity="0.5"/>
+    <path d="M406,48 L426,48 L423,62 Q414,68 404,62 Z" fill="url(#silverGrad)"/>
+    <rect x="411" y="62" width="5" height="10" fill="url(#silverGrad)"/>
+    <rect x="405" y="72" width="17" height="4" rx="1" fill="url(#silverGrad)"/>
+    <path d="M406,52 Q399,52 399,57 Q399,62 406,62" fill="none" stroke="url(#silverGrad)" stroke-width="2"/>
+    <path d="M426,52 Q433,52 433,57 Q433,62 426,62" fill="none" stroke="url(#silverGrad)" stroke-width="2"/>
+    <circle cx="430" cy="44" r="1.5" fill="#C0C0C0">
+      <animate attributeName="opacity" values="0;0.8;0" dur="2.5s" begin="0.6s" repeatCount="indefinite"/>
+    </circle>
+    <text x="423" y="92" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="9" fill="#C0C0C0" font-weight="700">SILVER</text>
+    <text x="423" y="108" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="8.5" fill="#a9b1d6">PullRequest</text>
+  </g>
+
+  <!-- ══ TROPHY 5: Followers (BRONZE) ══ x=488 -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.5s" fill="freeze"/>
+    <rect x="488" y="32" width="105" height="88" fill="#110b05" rx="8" stroke="#CD7F32" stroke-width="0.8" stroke-opacity="0.5"/>
+    <path d="M523,48 L543,48 L540,62 Q531,68 521,62 Z" fill="url(#bronzeGrad)"/>
+    <rect x="528" y="62" width="5" height="10" fill="url(#bronzeGrad)"/>
+    <rect x="522" y="72" width="17" height="4" rx="1" fill="url(#bronzeGrad)"/>
+    <path d="M523,52 Q516,52 516,57 Q516,62 523,62" fill="none" stroke="url(#bronzeGrad)" stroke-width="2"/>
+    <path d="M543,52 Q550,52 550,57 Q550,62 543,62" fill="none" stroke="url(#bronzeGrad)" stroke-width="2"/>
+    <circle cx="547" cy="44" r="1.5" fill="#CD7F32">
+      <animate attributeName="opacity" values="0;0.8;0" dur="3s" begin="0.3s" repeatCount="indefinite"/>
+    </circle>
+    <text x="540" y="92" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="9" fill="#CD7F32" font-weight="700">BRONZE</text>
+    <text x="540" y="108" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="8.5" fill="#a9b1d6">Followers</text>
+  </g>
+
+  <!-- ══ TROPHY 6: Repos (BRONZE) ══ x=605 -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.6s" fill="freeze"/>
+    <rect x="605" y="32" width="115" height="88" fill="#110b05" rx="8" stroke="#CD7F32" stroke-width="0.8" stroke-opacity="0.5"/>
+    <path d="M640,48 L660,48 L657,62 Q648,68 638,62 Z" fill="url(#bronzeGrad)"/>
+    <rect x="645" y="62" width="5" height="10" fill="url(#bronzeGrad)"/>
+    <rect x="639" y="72" width="17" height="4" rx="1" fill="url(#bronzeGrad)"/>
+    <path d="M640,52 Q633,52 633,57 Q633,62 640,62" fill="none" stroke="url(#bronzeGrad)" stroke-width="2"/>
+    <path d="M660,52 Q667,52 667,57 Q667,62 660,62" fill="none" stroke="url(#bronzeGrad)" stroke-width="2"/>
+    <circle cx="663" cy="44" r="1.5" fill="#CD7F32">
+      <animate attributeName="opacity" values="0;0.8;0" dur="2.8s" begin="0.8s" repeatCount="indefinite"/>
+    </circle>
+    <text x="662" y="92" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="9" fill="#CD7F32" font-weight="700">BRONZE</text>
+    <text x="662" y="108" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="8.5" fill="#a9b1d6">Repositories</text>
+  </g>
+</svg>

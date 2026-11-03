@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 495 195" width="495" height="195">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1b27"/>
+      <stop offset="100%" stop-color="#24283b"/>
+    </linearGradient>
+    <linearGradient id="rankArc" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#70a5fd"/>
+      <stop offset="100%" stop-color="#38bdae"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Card -->
+  <rect width="495" height="195" fill="url(#bg)" rx="6" stroke="#414868" stroke-width="1"/>
+
+  <!-- Title -->
+  <text x="25" y="32" font-family="'Segoe UI', Arial, sans-serif"
+        font-size="16" font-weight="700" fill="#70a5fd">
+    Tushar's GitHub Stats
+  </text>
+
+  <!-- Divider -->
+  <line x1="25" y1="45" x2="470" y2="45" stroke="#414868" stroke-width="0.8"/>
+
+  <!-- Vertical divider (left | right) -->
+  <line x1="348" y1="53" x2="348" y2="185" stroke="#414868" stroke-width="0.8"/>
+
+  <!-- ── STAT ROWS (left section) ── -->
+
+  <!-- Stars -->
+  <circle cx="38" cy="72" r="5" fill="#ff9e64"/>
+  <text x="52" y="77" font-family="'Segoe UI', Arial, sans-serif" font-size="13" fill="#a9b1d6">Total Stars</text>
+  <text x="230" y="77" text-anchor="end" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="600" fill="#c0caf5">12</text>
+
+  <!-- Commits -->
+  <circle cx="38" cy="100" r="5" fill="#70a5fd"/>
+  <text x="52" y="105" font-family="'Segoe UI', Arial, sans-serif" font-size="13" fill="#a9b1d6">Total Commits (2026)</text>
+  <text x="230" y="105" text-anchor="end" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="600" fill="#c0caf5">287</text>
+
+  <!-- PRs -->
+  <circle cx="38" cy="128" r="5" fill="#9ece6a"/>
+  <text x="52" y="133" font-family="'Segoe UI', Arial, sans-serif" font-size="13" fill="#a9b1d6">Total PRs</text>
+  <text x="230" y="133" text-anchor="end" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="600" fill="#c0caf5">6</text>
+
+  <!-- Issues -->
+  <circle cx="38" cy="156" r="5" fill="#f7768e"/>
+  <text x="52" y="161" font-family="'Segoe UI', Arial, sans-serif" font-size="13" fill="#a9b1d6">Total Issues</text>
+  <text x="230" y="161" text-anchor="end" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="600" fill="#c0caf5">8</text>
+
+  <!-- Contributed to -->
+  <circle cx="38" cy="184" r="5" fill="#bb9af7"/>
+  <text x="52" y="189" font-family="'Segoe UI', Arial, sans-serif" font-size="13" fill="#a9b1d6">Contributed to (2026)</text>
+  <text x="230" y="189" text-anchor="end" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="600" fill="#c0caf5">4</text>
+
+  <!-- ── RANK CIRCLE (right section) ── -->
+
+  <!-- Background ring -->
+  <circle cx="418" cy="112" r="42" fill="none" stroke="#2a2d40" stroke-width="6"/>
+
+  <!-- Animated progress arc -->
+  <circle cx="418" cy="112" r="42" fill="none"
+          stroke="url(#rankArc)" stroke-width="6"
+          stroke-dasharray="0 264" stroke-dashoffset="-66"
+          stroke-linecap="round">
+    <animate attributeName="stroke-dasharray"
+      values="0 264; 198 66; 198 66"
+      dur="1.8s" begin="0.2s" fill="freeze"/>
+    <animate attributeName="opacity" values="0.7;1;0.7" dur="3s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Outer glow ring -->
+  <circle cx="418" cy="112" r="50" fill="none" stroke="#70a5fd" stroke-width="0.5" opacity="0.2">
+    <animate attributeName="r" values="48;54;48" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.2;0.05;0.2" dur="3s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Rank text -->
+  <text x="418" y="104" text-anchor="middle"
+        font-family="'Segoe UI', Arial, sans-serif"
+        font-size="26" font-weight="700" fill="#70a5fd" filter="url(#glow)">B+</text>
+  <text x="418" y="124" text-anchor="middle"
+        font-family="'Segoe UI', Arial, sans-serif"
+        font-size="11" fill="#a9b1d6" letter-spacing="1">RANK</text>
+
+  <!-- Sparkle dots -->
+  <circle cx="376" cy="75" r="2" fill="#70a5fd">
+    <animate attributeName="opacity" values="0;1;0" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="460" cy="80" r="1.5" fill="#38bdae">
+    <animate attributeName="opacity" values="0;1;0" dur="2.5s" begin="0.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="385" cy="150" r="1.5" fill="#bb9af7">
+    <animate attributeName="opacity" values="0;1;0" dur="3s" begin="1s" repeatCount="indefinite"/>
+  </circle>
+</svg>

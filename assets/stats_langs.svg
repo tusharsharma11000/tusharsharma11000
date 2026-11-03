@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 195" width="300" height="195">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1b27"/>
+      <stop offset="100%" stop-color="#24283b"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Card -->
+  <rect width="300" height="195" fill="url(#bg)" rx="6" stroke="#414868" stroke-width="1"/>
+
+  <!-- Title -->
+  <text x="25" y="32" font-family="'Segoe UI', Arial, sans-serif"
+        font-size="15" font-weight="700" fill="#70a5fd">Most Used Languages</text>
+
+  <!-- Divider -->
+  <line x1="25" y1="44" x2="275" y2="44" stroke="#414868" stroke-width="0.8"/>
+
+  <!-- PYTHON — 40% -->
+  <circle cx="35" cy="68" r="5" fill="#3776ab"/>
+  <text x="48" y="73" font-family="'Segoe UI', sans-serif" font-size="12" fill="#a9b1d6">Python</text>
+  <text x="275" y="73" text-anchor="end" font-family="'Segoe UI', sans-serif" font-size="12" fill="#c0caf5" font-weight="600">40.0%</text>
+  <rect x="25" y="79" width="250" height="8" fill="#2a2d40" rx="4"/>
+  <rect x="25" y="79" width="0" height="8" fill="#3776ab" rx="4">
+    <animate attributeName="width" values="0;100" dur="1.2s" begin="0.1s" fill="freeze"/>
+  </rect>
+
+  <!-- C++ — 30% -->
+  <circle cx="35" cy="105" r="5" fill="#00599C"/>
+  <text x="48" y="110" font-family="'Segoe UI', sans-serif" font-size="12" fill="#a9b1d6">C++</text>
+  <text x="275" y="110" text-anchor="end" font-family="'Segoe UI', sans-serif" font-size="12" fill="#c0caf5" font-weight="600">30.0%</text>
+  <rect x="25" y="116" width="250" height="8" fill="#2a2d40" rx="4"/>
+  <rect x="25" y="116" width="0" height="8" fill="#00599C" rx="4">
+    <animate attributeName="width" values="0;75" dur="1.2s" begin="0.3s" fill="freeze"/>
+  </rect>
+
+  <!-- SQL — 18% -->
+  <circle cx="35" cy="142" r="5" fill="#4479A1"/>
+  <text x="48" y="147" font-family="'Segoe UI', sans-serif" font-size="12" fill="#a9b1d6">SQL</text>
+  <text x="275" y="147" text-anchor="end" font-family="'Segoe UI', sans-serif" font-size="12" fill="#c0caf5" font-weight="600">18.0%</text>
+  <rect x="25" y="153" width="250" height="8" fill="#2a2d40" rx="4"/>
+  <rect x="25" y="153" width="0" height="8" fill="#4479A1" rx="4">
+    <animate attributeName="width" values="0;45" dur="1.2s" begin="0.5s" fill="freeze"/>
+  </rect>
+
+  <!-- JavaScript — 12% -->
+  <circle cx="35" cy="179" r="5" fill="#f7df1e"/>
+  <text x="48" y="184" font-family="'Segoe UI', sans-serif" font-size="12" fill="#a9b1d6">JavaScript</text>
+  <text x="275" y="184" text-anchor="end" font-family="'Segoe UI', sans-serif" font-size="12" fill="#c0caf5" font-weight="600">12.0%</text>
+  <rect x="25" y="190" width="250" height="0" fill="#2a2d40" rx="4"/>
+</svg>

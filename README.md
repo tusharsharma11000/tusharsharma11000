@@ -15,7 +15,7 @@
 <br/>
 
 <!-- ═══════════════════════════════════════════ -->
-<!--           SOCIAL BADGES (Custom SVG)         -->
+<!--          SOCIAL BADGES (Custom SVG)         -->
 <!-- ═══════════════════════════════════════════ -->
 <p align="center">
   <a href="https://www.linkedin.com/in/tushar-sharma-a736a018b/" target="_blank">
@@ -66,12 +66,12 @@
 <br/>
 
 <!-- ═══════════════════════════════════════════ -->
-<!--            GITHUB STATS CARDS               -->
+<!--           GITHUB STATS + LANGUAGES          -->
 <!-- ═══════════════════════════════════════════ -->
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=tusharsharma11000&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&border_radius=12" height="185" alt="GitHub Stats"/>
+  <img src="assets/stats_github.svg" alt="GitHub Stats" width="495"/>
   &nbsp;&nbsp;
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=tusharsharma11000&layout=compact&theme=tokyonight&border_radius=12&langs_count=8" height="185" alt="Top Languages"/>
+  <img src="assets/stats_langs.svg" alt="Top Languages" width="300"/>
 </p>
 
 <br/>
@@ -80,7 +80,7 @@
 <!--           CONTRIBUTION STREAK               -->
 <!-- ═══════════════════════════════════════════ -->
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=tusharsharma11000&theme=tokyonight&border_radius=12&date_format=j%20M%5B%20Y%5D" alt="Streak Stats"/>
+  <img src="assets/stats_streak.svg" alt="Streak Stats" width="495"/>
 </p>
 
 <br/>
@@ -89,7 +89,7 @@
 <!--             LEETCODE STATS                  -->
 <!-- ═══════════════════════════════════════════ -->
 <p align="center">
-  <img src="https://leetcard.jacoblin.com/tusharsharma11000?theme=dark&font=Fira%20Code&ext=heatmap&border=1&radius=12" width="500" alt="LeetCode Stats"/>
+  <img src="assets/stats_leetcode.svg" alt="LeetCode Stats" width="495"/>
 </p>
 
 <br/>
@@ -98,7 +98,7 @@
 <!--            GITHUB TROPHIES                  -->
 <!-- ═══════════════════════════════════════════ -->
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=tusharsharma11000&theme=tokyonight&no-frame=true&margin-w=6&row=1&column=7" alt="GitHub Trophies"/>
+  <img src="assets/stats_trophies.svg" alt="GitHub Trophies" width="760"/>
 </p>
 
 <br/>
@@ -107,7 +107,7 @@
 <!--          CONTRIBUTION ACTIVITY GRAPH        -->
 <!-- ═══════════════════════════════════════════ -->
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=tusharsharma11000&theme=tokyo-night&bg_color=1a1b27&color=70a5fd&line=38bdae&point=bf91f3&area=true&hide_border=true&radius=6" width="95%" alt="Activity Graph"/>
+  <img src="assets/stats_activity.svg" alt="Activity Graph" width="760"/>
 </p>
 
 <br/>

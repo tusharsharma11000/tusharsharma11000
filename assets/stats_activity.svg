@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 185" width="760" height="185">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1b27"/>
+      <stop offset="100%" stop-color="#24283b"/>
+    </linearGradient>
+    <linearGradient id="barFill" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#38bdae"/>
+      <stop offset="100%" stop-color="#70a5fd"/>
+    </linearGradient>
+    <linearGradient id="barFill2" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#bb9af7"/>
+      <stop offset="100%" stop-color="#7aa2f7"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Card -->
+  <rect width="760" height="185" fill="url(#bg)" rx="6" stroke="#414868" stroke-width="1"/>
+
+  <!-- Title -->
+  <text x="380" y="22" text-anchor="middle"
+        font-family="'Segoe UI', Arial, sans-serif"
+        font-size="12" fill="#a9b1d6" letter-spacing="2">CONTRIBUTION  ACTIVITY  GRAPH</text>
+
+  <!-- Top accent line -->
+  <line x1="25" y1="29" x2="735" y2="29" stroke="#414868" stroke-width="0.8"/>
+
+  <!-- Y-axis labels -->
+  <text x="22" y="48"  text-anchor="end" font-family="'Segoe UI', sans-serif" font-size="9" fill="#414868">80</text>
+  <text x="22" y="78"  text-anchor="end" font-family="'Segoe UI', sans-serif" font-size="9" fill="#414868">60</text>
+  <text x="22" y="108" text-anchor="end" font-family="'Segoe UI', sans-serif" font-size="9" fill="#414868">40</text>
+  <text x="22" y="138" text-anchor="end" font-family="'Segoe UI', sans-serif" font-size="9" fill="#414868">20</text>
+  <text x="22" y="153" text-anchor="end" font-family="'Segoe UI', sans-serif" font-size="9" fill="#414868">0</text>
+
+  <!-- Horizontal grid lines -->
+  <line x1="27" y1="45"  x2="745" y2="45"  stroke="#414868" stroke-width="0.4" stroke-dasharray="4,4"/>
+  <line x1="27" y1="75"  x2="745" y2="75"  stroke="#414868" stroke-width="0.4" stroke-dasharray="4,4"/>
+  <line x1="27" y1="105" x2="745" y2="105" stroke="#414868" stroke-width="0.4" stroke-dasharray="4,4"/>
+  <line x1="27" y1="135" x2="745" y2="135" stroke="#414868" stroke-width="0.4" stroke-dasharray="4,4"/>
+  <line x1="27" y1="152" x2="745" y2="152" stroke="#414868" stroke-width="0.8"/>
+
+  <!-- Monthly bars — 12 months (Nov 2025 to Oct 2026) -->
+  <!-- Heights scaled: max=80 → actual px height from baseline (y=152) -->
+  <!-- Heights (px): 25,30,20,35,45,38,55,62,48,70,42,58 -->
+
+  <!-- Bar x positions: start=30, width=52, gap=8 → step=60 -->
+
+  <!-- Nov 2025: 25px -->
+  <rect x="30" y="152" width="52" height="0" fill="url(#barFill)" rx="3" filter="url(#glow)">
+    <animate attributeName="y" values="152;127" dur="0.8s" begin="0.05s" fill="freeze"/>
+    <animate attributeName="height" values="0;25" dur="0.8s" begin="0.05s" fill="freeze"/>
+  </rect>
+
+  <!-- Dec 2025: 30px -->
+  <rect x="90" y="152" width="52" height="0" fill="url(#barFill)" rx="3" filter="url(#glow)">
+    <animate attributeName="y" values="152;122" dur="0.8s" begin="0.1s" fill="freeze"/>
+    <animate attributeName="height" values="0;30" dur="0.8s" begin="0.1s" fill="freeze"/>
+  </rect>
+
+  <!-- Jan 2026: 20px -->
+  <rect x="150" y="152" width="52" height="0" fill="url(#barFill)" rx="3" filter="url(#glow)">
+    <animate attributeName="y" values="152;132" dur="0.8s" begin="0.15s" fill="freeze"/>
+    <animate attributeName="height" values="0;20" dur="0.8s" begin="0.15s" fill="freeze"/>
+  </rect>
+
+  <!-- Feb 2026: 35px -->
+  <rect x="210" y="152" width="52" height="0" fill="url(#barFill)" rx="3" filter="url(#glow)">
+    <animate attributeName="y" values="152;117" dur="0.8s" begin="0.2s" fill="freeze"/>
+    <animate attributeName="height" values="0;35" dur="0.8s" begin="0.2s" fill="freeze"/>
+  </rect>
+
+  <!-- Mar 2026: 45px -->
+  <rect x="270" y="152" width="52" height="0" fill="url(#barFill2)" rx="3" filter="url(#glow)">
+    <animate attributeName="y" values="152;107" dur="0.8s" begin="0.25s" fill="freeze"/>
+    <animate attributeName="height" values="0;45" dur="0.8s" begin="0.25s" fill="freeze"/>
+  </rect>
+
+  <!-- Apr 2026: 38px -->
+  <rect x="330" y="152" width="52" height="0" fill="url(#barFill2)" rx="3" filter="url(#glow)">
+    <animate attributeName="y" values="152;114" dur="0.8s" begin="0.3s" fill="freeze"/>
+    <animate attributeName="height" values="0;38" dur="0.8s" begin="0.3s" fill="freeze"/>
+  </rect>
+
+  <!-- May 2026: 55px -->
+  <rect x="390" y="152" width="52" height="0" fill="url(#barFill2)" rx="3" filter="url(#glow)">
+    <animate attributeName="y" values="152;97" dur="0.8s" begin="0.35s" fill="freeze"/>
+    <animate attributeName="height" values="0;55" dur="0.8s" begin="0.35s" fill="freeze"/>
+  </rect>
+
+  <!-- Jun 2026: 62px -->
+  <rect x="450" y="152" width="52" height="0" fill="url(#barFill2)" rx="3" filter="url(#glow)">
+    <animate attributeName="y" values="152;90" dur="0.8s" begin="0.4s" fill="freeze"/>
+    <animate attributeName="height" values="0;62" dur="0.8s" begin="0.4s" fill="freeze"/>
+  </rect>
+
+  <!-- Jul 2026: 48px -->
+  <rect x="510" y="152" width="52" height="0" fill="url(#barFill)" rx="3" filter="url(#glow)">
+    <animate attributeName="y" values="152;104" dur="0.8s" begin="0.45s" fill="freeze"/>
+    <animate attributeName="height" values="0;48" dur="0.8s" begin="0.45s" fill="freeze"/>
+  </rect>
+
+  <!-- Aug 2026: 70px -->
+  <rect x="570" y="152" width="52" height="0" fill="url(#barFill)" rx="3" filter="url(#glow)">
+    <animate attributeName="y" values="152;82" dur="0.8s" begin="0.5s" fill="freeze"/>
+    <animate attributeName="height" values="0;70" dur="0.8s" begin="0.5s" fill="freeze"/>
+  </rect>
+
+  <!-- Sep 2026: 42px -->
+  <rect x="630" y="152" width="52" height="0" fill="url(#barFill2)" rx="3" filter="url(#glow)">
+    <animate attributeName="y" values="152;110" dur="0.8s" begin="0.55s" fill="freeze"/>
+    <animate attributeName="height" values="0;42" dur="0.8s" begin="0.55s" fill="freeze"/>
+  </rect>
+
+  <!-- Oct 2026: 58px -->
+  <rect x="690" y="152" width="52" height="0" fill="url(#barFill2)" rx="3" filter="url(#glow)">
+    <animate attributeName="y" values="152;94" dur="0.8s" begin="0.6s" fill="freeze"/>
+    <animate attributeName="height" values="0;58" dur="0.8s" begin="0.6s" fill="freeze"/>
+  </rect>
+
+  <!-- Month labels -->
+  <text x="56"  y="168" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="8.5" fill="#a9b1d6">Nov</text>
+  <text x="116" y="168" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="8.5" fill="#a9b1d6">Dec</text>
+  <text x="176" y="168" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="8.5" fill="#a9b1d6">Jan</text>
+  <text x="236" y="168" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="8.5" fill="#a9b1d6">Feb</text>
+  <text x="296" y="168" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="8.5" fill="#a9b1d6">Mar</text>
+  <text x="356" y="168" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="8.5" fill="#a9b1d6">Apr</text>
+  <text x="416" y="168" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="8.5" fill="#a9b1d6">May</text>
+  <text x="476" y="168" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="8.5" fill="#a9b1d6">Jun</text>
+  <text x="536" y="168" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="8.5" fill="#a9b1d6">Jul</text>
+  <text x="596" y="168" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="8.5" fill="#a9b1d6">Aug</text>
+  <text x="656" y="168" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="8.5" fill="#a9b1d6">Sep</text>
+  <text x="716" y="168" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="8.5" fill="#a9b1d6">Oct</text>
+
+  <!-- Year labels -->
+  <text x="100" y="180" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="8" fill="#414868">2025</text>
+  <text x="430" y="180" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="8" fill="#414868">2026</text>
+</svg>
